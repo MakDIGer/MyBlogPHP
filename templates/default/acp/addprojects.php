@@ -32,10 +32,10 @@
 											<input type="text" name="support_project" id="support_project" value="" placeholder="Поддержка" />
 										</div>
 										<div class="6u 12u$(xsmall)">
-											<input type="text" name="date_rls_project" id="date_rls_project" value="" placeholder="Дата выпуска DD-MM-YYYY" />
+											<input type="text" name="date_rls_project" id="date_rls_project" value="" placeholder="Дата выпуска DD месяц YYYY" />
 										</div>
 										<div class="6u 12u$(xsmall)">
-											<input type="text" name="date_lst_upd_project" id="date_lst_upd_project" value="" placeholder="Дата последнего обновления DD-MM-YYYY" />
+											<input type="text" name="date_lst_upd_project" id="date_lst_upd_project" value="" placeholder="Дата последнего обновления DD месяц YYYY" />
 										</div>
 										<div class="12u$">
 											<textarea name="desc_project" id="desc_project" placeholder="Краткое описание проекта" rows="6"></textarea>
