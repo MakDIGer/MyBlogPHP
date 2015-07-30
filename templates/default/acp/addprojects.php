@@ -13,7 +13,6 @@
 							<h2>Добавить проект</h2>
 							<p></p>
 						</header>
-						<p>
 							<?php if (isset($_POST['title_project'])) { echo $resultat."<br />Переадресация через 5 секунд."; header( 'Refresh: 5; url=acp_myprojects.html' ); } else { ?>
 													<!-- Form -->
 							<section>
