@@ -13,6 +13,7 @@
 					<ul class="icons">
 						<li><a href="https://twitter.com/macarin88" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="https://www.facebook.com/nikolay.makarin" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="http://github.com/makdiger/" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
 						<li><a href="main.html#five" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
