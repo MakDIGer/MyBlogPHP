@@ -2,7 +2,7 @@
 
 /*
  * Персональный блог Макарина Николая
- * Файл: systems/acp/rmnews.php
+ * Файл: systems/acp/rmprojects.php
  */
  
 $del = isset($_GET['del']) ? htmlspecialchars($_GET['del']) : '';
