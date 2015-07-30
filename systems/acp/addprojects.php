@@ -6,12 +6,16 @@
  */
 
 if (isset($_POST['title_project']) and isset($_POST['desc_project']) and isset($_POST['description_project']) and isset($_POST['lang_project']) and isset($_POST['version_project']) and isset($_POST['support_project']) and isset($_POST['date_rls_project']) and isset($_POST['date_lst_upd_project'])) {
-	$title_post = htmlspecialchars($_POST['title_post']);
-	$desc_post = htmlspecialchars($_POST['desc_post']);
-	$text_post = htmlspecialchars($_POST['text_post']);
-	$date_post = date(d).".".date(m).".".date(Y);
+	$title_project = htmlspecialchars($_POST['title_project']);
+	$desc_project = htmlspecialchars($_POST['desc_project']);
+	$description_project = htmlspecialchars($_POST['description_project']);
+	$lang_project = htmlspecialchars($_POST['lang_project']);
+	$version_project = htmlspecialchars($_POST['version_project']);
+	$support_project = htmlspecialchars($_POST['support_project']);
+	$date_rls_project = htmlspecialchars($_POST['date_rls_project']);
+	$date_lst_upd_project = htmlspecialchars($_POST['date_lst_upd_project']);
 	
-	ask_database("INSERT INTO my_news (title_post, date_post, desc_post, text_post) VALUE ('".$title_post."','".$date_post."','".$desc_post."','".$text_post."')");
+	ask_database("INSERT INTO my_projects (title_project, desc_project, description_project, lang_project, version_project, support_project, date_rls_project, date_lst_upd_project) VALUE ('".$title_project."','".$desc_project."','".$description_project."','".$lang_project."','".$version_project."','".$support_project."','".$date_rls_project."','".$date_lst_upd_project."')");
 	$resultat = 'Проект успешно добавлен';
 }
 ?>

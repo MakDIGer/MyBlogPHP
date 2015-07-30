@@ -8,9 +8,9 @@
 $del = isset($_GET['del']) ? htmlspecialchars($_GET['del']) : '';
 
 if ($del == '' && !is_numeric($del)) {
-	$resultat = "Не выбрана новость для удаления";
+	$resultat = "Не выбран проект для удаления";
 } else {
-	ask_database('DELETE FROM my_news WHERE id_post='.$del); 
-	$resultat = "Новость успешно удалена!"; 
+	ask_database('DELETE FROM my_projects WHERE id_project="'.$del.'"'); 
+	$resultat = "Проект успешно удален!"; 
 }
 ?>

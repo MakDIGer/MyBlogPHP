@@ -10,11 +10,11 @@
 				<section id="banner">
 					<div class="content">
 						<header>
-							<h2>Удаление новости!</h2>
+							<h2>Удаление проекта!</h2>
 							<p><?php echo $resultat; ?><br />
 							Переадресация страницы через 5 секунд.</p>
 						</header>
-						<?php header( 'Refresh: 5; url=acp_mynews.html' ); ?>
+						<?php header( 'Refresh: 5; url=acp_myprojects.html' ); ?>
 					</div>
 					<a href="acp_mynews.html" class="goto-next scrolly">Вернуться назад</a>
 				</section>

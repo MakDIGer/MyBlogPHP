@@ -10,7 +10,7 @@
 					<div class="8u$ 12u$(medium) important(medium)">
 						<header class="major">
 							<h2>Мои проекты</h2>
-							<?php if (!isset($id_news)) { ?><p><a href="acp_addnews.html" class="button special fit small">Добавить</a></p><?php } ?>
+							<?php if (!isset($id_projects)) { ?><p><a href="acp_addprojects.html" class="button special fit small">Добавить</a></p><?php } ?>
 						</header>
 				<?php if (!isset($id_projects)) { ?>
 						<!-- Table -->
