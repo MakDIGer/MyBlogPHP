@@ -15,6 +15,7 @@ RewriteRule mynews-news([0-9]+)\.html$ index.php?page=mynews&news=$1 [L]
 RewriteRule acp_myprojects-projects([0-9]+)\.html$ acp_index.php?acp_page=myprojects&project=$1 [L]
 RewriteRule acp_myprojects-del([0-9]+)\.html$ acp_index.php?acp_page=rmprojects&del=$1 [L]
 RewriteRule acp_addprojects\.html$ acp_index.php?acp_page=addprojects [L]
+RewriteRule acp_editprojects\.html$ acp_index.php?acp_page=editprojects&projects=$1 [L]
 RewriteRule acp_myprojects-([0-9]+)\.html$ acp_index.php?acp_page=myprojects&page_projects=$1 [L]
 
 RewriteRule myprojects-([0-9]+)\.html$ index.php?page=myprojects&page_projects=$1 [L]

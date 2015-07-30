@@ -4,7 +4,8 @@
  * Персональный блог Макарина Николая
  * Файл: templates/default/acp/myprojects.php
  */
- 
+
+
 ?>
 	</div>
 					<div class="8u$ 12u$(medium) important(medium)">
@@ -52,17 +53,33 @@
 								</p>
 							</section>
 				<?php } else { ?>
-						<!-- Text -->
+						<!-- Form -->
 							<section>
-								<?php while ($row = mysql_fetch_assoc($data_db)) { ?>
-								<header>
-									<h3><?php echo $row['title_project']; ?></h3>
-									<p>Язык программирования: <?php echo $row['lang_project']; ?> | Версия проекта: <?php echo $row['version_project']; ?> | Последнее обновление: <?php echo $row['date_lst_upd_project']; ?></p>
-								</header>
-								<p><?php echo $row['description_project']; ?> </p>
-								<p>Дата выпуска: <?php echo $row['date_rls_project']; ?> | Поддержка: <?php echo $row['support_project']; ?></p>
-								<?php } ?>
+								<form name="edit_news" method="post" action="acp_editnews.html">
+									<div class="row uniform 50%">
+										<div class="6u 12u$(xsmall)">
+											<input type="text" name="id_post" id="id_post" value="<?php echo $row['id_post']; ?>" />
+										</div>
+										<div class="6u 12u$(xsmall)">
+											<input type="text" name="title_post" id="title_post" value="<?php echo $row['title_post']; ?>" />
+										</div>
+										<div class="12u$">
+											<textarea name="desc_post" id="desc_post" rows="6"><?php echo $row['desc_post']; ?></textarea>
+										</div>
+										<div class="12u$">
+											<textarea name="text_post" id="text_post" rows="6"><?php echo $row['text_post']; ?></textarea>
+										</div>
+										<div class="12u$">
+											<ul class="actions">
+												<li><input type="submit" value="Отправить сообщение" class="special" /></li>
+												<li><input type="reset" value="Очистить" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
 							</section>
+						
+						
 							<?php } ?>
 					</div>
 
