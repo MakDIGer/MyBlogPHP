@@ -16,7 +16,7 @@
 													<li><a href="acp_main.html">Главная</a></li>
 													<li><a href="acp_mynews.html">Мои новости</a></li>
 													<li><a href="acp_myprojects.html">Мои проекты</a></li>
-													<li><a href="#">Настройки портала</a></li>
+													<li><a href="acp_settings.html">Настройки портала</a></li>
 													<li><a href="acp_login.html">Выход</a></li>
 												</ul>
 											</p>

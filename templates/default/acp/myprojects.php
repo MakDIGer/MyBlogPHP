@@ -52,22 +52,37 @@
 								} ?>
 								</p>
 							</section>
-				<?php } else { ?>
+				<?php } else { while ($row = mysql_fetch_assoc($data_db)) { ?>
 						<!-- Form -->
 							<section>
-								<form name="edit_news" method="post" action="acp_editnews.html">
+								<form name="editprojects" method="post" action="acp_editprojects.html">
 									<div class="row uniform 50%">
 										<div class="6u 12u$(xsmall)">
-											<input type="text" name="id_post" id="id_post" value="<?php echo $row['id_post']; ?>" />
+											<input type="text" name="id_project" id="id_project" value="<?php echo $row['id_project']; ?>" />
 										</div>
 										<div class="6u 12u$(xsmall)">
-											<input type="text" name="title_post" id="title_post" value="<?php echo $row['title_post']; ?>" />
+											<input type="text" name="title_project" id="title_project" value="<?php echo $row['title_project']; ?>" />
 										</div>
 										<div class="12u$">
-											<textarea name="desc_post" id="desc_post" rows="6"><?php echo $row['desc_post']; ?></textarea>
+											<textarea name="desc_project" id="desc_project" rows="6"><?php echo $row['desc_project']; ?></textarea>
 										</div>
 										<div class="12u$">
-											<textarea name="text_post" id="text_post" rows="6"><?php echo $row['text_post']; ?></textarea>
+											<textarea name="description_project" id="description_project" rows="6"><?php echo $row['description_project']; ?></textarea>
+										</div>
+										<div class="6u 12u$(xsmall)">
+											<input type="text" name="lang_project" id="lang_project" value="<?php echo $row['lang_project']; ?>" />
+										</div>
+										<div class="6u 12u$(xsmall)">
+											<input type="text" name="version_project" id="version_project" value="<?php echo $row['version_project']; ?>" />
+										</div>
+										<div class="6u 12u$(xsmall)">
+											<input type="text" name="support_project" id="support_project" value="<?php echo $row['support_project']; ?>" />
+										</div>
+										<div class="6u 12u$(xsmall)">
+											<input type="text" name="date_rls_project" id="date_rls_project" value="<?php echo $row['date_rls_project']; ?>" />
+										</div>
+										<div class="6u 12u$(xsmall)">
+											<input type="text" name="date_lst_upd_project" id="date_lst_upd_project" value="<?php echo $row['date_lst_upd_project']; ?>" />
 										</div>
 										<div class="12u$">
 											<ul class="actions">
@@ -80,7 +95,7 @@
 							</section>
 						
 						
-							<?php } ?>
+							<?php } } ?>
 					</div>
 
 							</div>

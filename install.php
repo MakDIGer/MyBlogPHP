@@ -5,8 +5,12 @@
  * Файл: install.php
  */
 
+define('SITE_NAME', 'Персональный блог');
+define('SERVER_DOMAIN', $_SERVER['HTTP_HOST']);
+
 $page = isset($_GET['page']) ? htmlspecialchars($_GET['page']) : '1';
 
+include_once 'install/config.php';
 require_once 'templates/default/head.php';
 
 switch ($page) {

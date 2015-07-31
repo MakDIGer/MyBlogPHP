@@ -2,7 +2,7 @@
 
 /*
  * Персональный блог Макарина Николая
- * Файл: templates/default/acp/rmnews.php
+ * Файл: templates/default/acp/remove.php
  */
  
 ?>
