@@ -15,6 +15,7 @@ require_once 'templates/default/head.php';
 
 switch ($page) {
 	case '1' : require_once 'install/1.php'; break;
+	case '2' : require_once 'install/2.php'; break;
 	default: require_once 'install/1.php'; break;
 }
 
