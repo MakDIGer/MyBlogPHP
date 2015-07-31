@@ -10,7 +10,7 @@
 <!DOCTYPE HTML>
 <!--
 	Работает на системе Макарина Николая
-	Версия 0.91 Beta
+	Версия 0.98 Beta
 	Шаблон взят с сайта HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
