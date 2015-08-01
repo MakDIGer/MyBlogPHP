@@ -7,7 +7,7 @@
 
 //конфиг базы данных
 define('DB_HOST', 'localhost'); // сервер БД
-define('DB_USER', 'makarin'); // логин БД
-define('DB_PASS', 'mak2526669'); // пароль БД
-define('DB_NAME', 'makarin_kgdnet_ru'); // имя БД
+define('DB_USER', 'user'); // логин БД
+define('DB_PASS', 'pass'); // пароль БД
+define('DB_NAME', 'database'); // имя БД
 ?>
