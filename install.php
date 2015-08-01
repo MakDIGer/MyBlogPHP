@@ -10,12 +10,13 @@ define('SERVER_DOMAIN', $_SERVER['HTTP_HOST']);
 
 $page = isset($_GET['page']) ? htmlspecialchars($_GET['page']) : '1';
 
-include_once 'install/config.php';
+include_once 'install/function.php';
 require_once 'templates/default/head.php';
 
 switch ($page) {
 	case '1' : require_once 'install/1.php'; break;
 	case '2' : require_once 'install/2.php'; break;
+	case '3' : require_once 'install/3.php'; break;
 	default: require_once 'install/1.php'; break;
 }
 

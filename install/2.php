@@ -5,37 +5,6 @@
  * Файл: install/2.php
  */
 
-function show_error($resultat)
-{ 	?>
-				<!-- Banner -->
-				<section id="banner">
-					<div class="content">
-						<header>
-							<h2>Установка персонального блога</h2>
-							<p><?php echo $resultat; header( 'Refresh: 5; url=install.php?page=1' );?></p>
-						</header>
-					</div>
-					<a href="install.php?page=1" class="goto-next scrolly">1 шаг</a>
-				</section>
-	<?php
-}
-
-function ask_database($query)
-{
-	// соединяемся с сервером базы данных
-    $connect_db = mysql_connect(DB_HOST, DB_USER, DB_PASS)
-    or die("Could not connect: " . mysql_error());
-    
-    // подключаемся к базе данных
-    mysql_select_db(DB_NAME, $connect_db)
-    or die("Could not select DB: " . mysql_error());
-	mysql_query("SET NAMES utf8");
-	
-	// Выполняем SQL-запрос
-	$data_db = mysql_query($query) or die('Запрос не удался: ' . mysql_error());
-	return $data_db;
-}
-
 function add_bd()
 {
 	ask_database("CREATE TABLE `my_news` (
@@ -118,10 +87,22 @@ if (isset($_POST['db_host']) and isset($_POST['db_user']) and isset($_POST['db_p
 														<form name="settings" method="post" action="install.php?page=3">
 															<div class="row uniform 50%">
 																<div class="6u 12u$(xsmall)">
-																	<input type="text" name="db_host" id="db_host" value="" placeholder="Хост базы данных" />
+																	<input type="text" name="site_name" id="site_name" value="" placeholder="Заголовок портала" />
 																</div>
 																<div class="6u 12u$(xsmall)">
-																	<input type="text" name="db_user" id="db_user" value="" placeholder="Пользователь базы данных" />
+																	<input type="text" name="site_domain" id="site_domain" value="" placeholder="Основной домен" />
+																</div>
+																<div class="6u 12u$(xsmall)">
+																	<input type="text" name="page_posts" id="page_posts" value="" placeholder="Колличество позиций на страницу" />
+																</div>
+																<div class="6u 12u$(xsmall)">
+																	<input type="email" name="site_email" id="site_email" value="" placeholder="Электронная почта портала" />
+																</div>
+																<div class="6u 12u$(xsmall)">
+																	<input type="text" name="site_email_pass" id="site_email_pass" value="" placeholder="Пароль для отправки Email с портала" />
+																</div>
+																<div class="6u 12u$(xsmall)">
+																	<input type="text" name="site_email_name" id="site_email_name" value="" placeholder="Имя для отправки Email с портала" />
 																</div>
 																<div class="12u$">
 																	<ul class="actions">
