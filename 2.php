@@ -26,21 +26,17 @@ function add_bd()
 }
 
 if (isset($_POST['db_host']) and isset($_POST['db_user']) and isset($_POST['db_pass']) and isset($_POST['db_name'])) {
-	if (substr(sprintf('%o', fileperms('systems')), -4) == '0777') {
-		$text = "<?php\n";
-		$text .= "define('DB_HOST','".htmlspecialchars($_POST['db_host'])."');\n";
-		$text .= "define('DB_USER','".htmlspecialchars($_POST['db_user'])."');\n";
-		$text .= "define('DB_PASS','".htmlspecialchars($_POST['db_pass'])."');\n";
-		$text .= "define('DB_NAME','".htmlspecialchars($_POST['db_name'])."');\n";
-		$text .= "?>";
+	/*$text = "define('DB_HOST','".htmlspecialchars($_POST['db_host'])."')\n";
+	$text. = "define('DB_USER','".htmlspecialchars($_POST['db_user'])."')\n";
+	$text. = "define('DB_PASS','".htmlspecialchars($_POST['db_pass'])."')\n";
+	$text. = "define('DB_NAME','".htmlspecialchars($_POST['db_name'])."')\n";
 	
-		$filename = 'systems/config2.php';
-		if (!file_exists($filename)) {
-			$fo = fopen($filename,"w");
-			fwrite($fo,$text);
-			fclose($fo);
-		} else show_error('Ошибка!<br />Файл конфигурации уже существует!');
-	} else show_error('Ошибка. Права на каталог systems должны быть 777');
+	$filename = 'systems/config2.php';
+	if (!file_exists($filename)) {
+		$fo = fopen($filename,"w");
+		fwrite($fo,$text);
+		fclose($fo);
+	} else show_error('Ошибка!<br />Файл конфигурации уже существует!');*/
 } else show_error('Ошибка!<br />Не заполнены необходимые поля!');
 
 ?>
@@ -49,7 +45,7 @@ if (isset($_POST['db_host']) and isset($_POST['db_user']) and isset($_POST['db_p
 					<div class="content">
 						<header>
 							<h2>Установка персонального блога</h2>
-							<p>Проверка<br /><?php echo $text; ?></p>
+							<p>Проверка</p>
 						</header>
 					</div>
 					<a href="install.php?page=1" class="goto-next scrolly">1 шаг</a>

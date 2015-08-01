@@ -3,6 +3,7 @@ RewriteBase /
 
 RewriteRule acp_([a-z]+)\.html$ acp_index.php?acp_page=$1 [L]
 RewriteRule ([a-z]+)\.html$ index.php?page=$1 [L]
+
 RewriteRule acp_mynews-([0-9]+)\.html$ acp_index.php?acp_page=mynews&acp_page_news=$1 [L]
 RewriteRule acp_addnews\.html$ acp_index.php?acp_page=addnews [L]
 RewriteRule acp_editnews\.html$ acp_index.php?acp_page=editnews&news=$1 [L]
