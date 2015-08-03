@@ -2,26 +2,22 @@
 
 /*
  * Персональный блог Макарина Николая
- * Файл: install/3.php
+ * Файл: install/4.php
  */
 
 if (isset($_POST['site_name']) and isset($_POST['site_domain']) and isset($_POST['page_posts']) and isset($_POST['site_email']) and isset($_POST['site_email_pass']) and isset($_POST['site_email_name'])) {
 	$site_name = htmlspecialchars($_POST['site_name']);
 	$site_domain = htmlspecialchars($_POST['site_domain']);
-	$page_posts = htmlspecialchars($_POST['page_posts']);
+	if (is_numeric($_POST['page_posts'])) { $page_posts = htmlspecialchars($_POST['page_posts']); } else show_error('Ошибка<br />Колличество страниц на страницу должно быть числом');
 	$site_email = htmlspecialchars($_POST['site_email']);
 	$site_email_pass = htmlspecialchars($_POST['site_email_pass']);
 	$site_email_name = htmlspecialchars($_POST['site_email_name']);
 
 	include 'systems/config2.php';
-	ask_database("INSERT INTO `settings` (`site_name`, `site_domain`, `site_template`, `site_visits`, `site_uniq_visits`, `page_posts`, `site_email`, `site_email_pass`, 'site_email_name') VALUES
+	ask_database("INSERT INTO `settings` (`site_name`, `site_domain`, `site_template`, `site_visits`, `site_uniq_visits`, `page_posts`, `site_email`, `site_email_pass`, `site_email_name`) VALUES
 ('".$site_name."', '".$site_domain."', 'default', '0', '0', '".$page_posts."', '".$site_email."', '".$site_email_pass."', '".$site_email_name."')");
 
-} else show_error('Ошибка!<br />Не все необходимые поля заполнены')
-
-ask_database("INSERT INTO `settings` (`site_name`, `site_domain`, `page_posts`, `site_email`, `site_email_pass`, 'site_email_name') VALUES
-('1', 'Первая новость', '31 июля 2015', 'Описание первое новости.', 'Полный текст первой новости.')");
-	
+} else show_error('Ошибка!<br />Не все необходимые поля заполнены');
 ?>
 			<!-- Banner -->
 				<section id="banner">

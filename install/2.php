@@ -48,8 +48,10 @@ function add_bd()
   `user_ip` varchar(32) CHARACTER SET utf8 NOT NULL,
   PRIMARY KEY (`user_id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=cp1251 AUTO_INCREMENT=2");
+
+	$date_news = date(d).".".date(m).".".date(Y);
 	ask_database("INSERT INTO `my_news` (`id_post`, `title_post`, `date_post`, `desc_post`, `text_post`) VALUES
-('1', 'Первая новость', '31 июля 2015', 'Описание первое новости.', 'Полный текст первой новости.')");
+('1', 'Первая новость', '".$date_news."', 'Описание первое новости.', 'Полный текст первой новости.')");
 	ask_database("INSERT INTO `my_projects` (`id_project`, `title_project`, `desc_project`, `description_project`, `lang_project`, `version_project`, `support_project`, `date_rls_project`, `date_lst_upd_project`) VALUES
 ('1', 'Заголовок первого проекта', 'Короткое описание первого проекта', 'Полное описание первого проекта. Полное описание первого проекта. Полное описание первого проекта. Полное описание первого проекта. Полное описание первого проекта. Полное описание первого проекта. Полное описание первого проекта. Полное описание первого проекта. Полное описание первого проекта. Полное описание первого проекта. Полное описание первого проекта. Полное описание первого проекта. Полное описание первого проекта. ', 'С++', '1.10', 'ДА', '10 август 2015', '11 сентябрь 2015')");
 }
