@@ -5,6 +5,23 @@
  * Файл: install/3.php
  */
 
+if (isset($_POST['site_name']) and isset($_POST['site_domain']) and isset($_POST['page_posts']) and isset($_POST['site_email']) and isset($_POST['site_email_pass']) and isset($_POST['site_email_name'])) {
+	$site_name = htmlspecialchars($_POST['site_name']);
+	$site_domain = htmlspecialchars($_POST['site_domain']);
+	$page_posts = htmlspecialchars($_POST['page_posts']);
+	$site_email = htmlspecialchars($_POST['site_email']);
+	$site_email_pass = htmlspecialchars($_POST['site_email_pass']);
+	$site_email_name = htmlspecialchars($_POST['site_email_name']);
+
+	include 'systems/config2.php';
+	ask_database("INSERT INTO `settings` (`site_name`, `site_domain`, `site_template`, `site_visits`, `site_uniq_visits`, `page_posts`, `site_email`, `site_email_pass`, 'site_email_name') VALUES
+('".$site_name."', '".$site_domain."', 'default', '0', '0', '".$page_posts."', '".$site_email."', '".$site_email_pass."', '".$site_email_name."')");
+
+} else show_error('Ошибка!<br />Не все необходимые поля заполнены')
+
+ask_database("INSERT INTO `settings` (`site_name`, `site_domain`, `page_posts`, `site_email`, `site_email_pass`, 'site_email_name') VALUES
+('1', 'Первая новость', '31 июля 2015', 'Описание первое новости.', 'Полный текст первой новости.')");
+	
 ?>
 			<!-- Banner -->
 				<section id="banner">
@@ -14,25 +31,16 @@
 							<p>
 													<!-- Form -->
 													<section>
-														<form name="settings" method="post" action="install.php?page=3">
+														<form name="users" method="post" action="install.php?page=4">
 															<div class="row uniform 50%">
 																<div class="6u 12u$(xsmall)">
-																	<input type="text" name="site_name" id="site_name" value="" placeholder="Заголовок портала" />
+																	<input type="text" name="user_name" id="user_name" value="" placeholder="Имя администратора портала" />
 																</div>
 																<div class="6u 12u$(xsmall)">
-																	<input type="text" name="site_domain" id="site_domain" value="" placeholder="Основной домен" />
+																	<input type="text" name="user_pass" id="user_pass" value="" placeholder="Пароль к панели администрирования" />
 																</div>
 																<div class="6u 12u$(xsmall)">
-																	<input type="text" name="page_posts" id="page_posts" value="" placeholder="Колличество позиций на страницу" />
-																</div>
-																<div class="6u 12u$(xsmall)">
-																	<input type="email" name="site_email" id="site_email" value="" placeholder="Электронная почта портала" />
-																</div>
-																<div class="6u 12u$(xsmall)">
-																	<input type="text" name="site_email_pass" id="site_email_pass" value="" placeholder="Пароль для отправки Email с портала" />
-																</div>
-																<div class="6u 12u$(xsmall)">
-																	<input type="text" name="site_email_name" id="site_email_name" value="" placeholder="Имя для отправки Email с портала" />
+																	<input type="text" name="user_email" id="user_email" value="" placeholder="Email для входа в панель администрирования" />
 																</div>
 																<div class="12u$">
 																	<ul class="actions">
