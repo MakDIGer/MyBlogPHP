@@ -65,7 +65,7 @@ if (isset($_POST['db_host']) and isset($_POST['db_user']) and isset($_POST['db_p
 		$text .= "define('DB_NAME','".htmlspecialchars($_POST['db_name'])."');\n";
 		$text .= "?>";
 	
-		$filename = 'systems/config2.php';
+		$filename = 'systems/config.php';
 		if (!file_exists($filename)) {
 			$fo = fopen($filename,"w");
 			fwrite($fo,$text);

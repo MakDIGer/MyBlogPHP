@@ -13,7 +13,7 @@ if (isset($_POST['site_name']) and isset($_POST['site_domain']) and isset($_POST
 	$site_email_pass = htmlspecialchars($_POST['site_email_pass']);
 	$site_email_name = htmlspecialchars($_POST['site_email_name']);
 
-	include 'systems/config2.php';
+	include 'systems/config.php';
 	ask_database("INSERT INTO `settings` (`site_name`, `site_domain`, `site_template`, `site_visits`, `site_uniq_visits`, `page_posts`, `site_email`, `site_email_pass`, `site_email_name`) VALUES
 ('".$site_name."', '".$site_domain."', 'default', '0', '0', '".$page_posts."', '".$site_email."', '".$site_email_pass."', '".$site_email_name."')");
 

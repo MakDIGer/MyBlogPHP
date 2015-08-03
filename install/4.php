@@ -11,7 +11,7 @@ if (isset($_POST['user_name']) and isset($_POST['user_pass']) and isset($_POST['
 	$user_pass = md5(md5(htmlspecialchars($_POST['user_pass'])));
 	$user_email = htmlspecialchars($_POST['user_email']);
 
-	include 'systems/config2.php';
+	include 'systems/config.php';
 	ask_database("INSERT INTO `users` (`user_id`, `user_name`, `user_pass`, `user_email`, `user_hash`, `user_ip`) VALUES
 ('1', '".$user_name."', '".$user_pass."', '".$user_email."', '0', '0')");
 } else show_error('Ошибка!< br />Не все необходимые поля заполнены');
