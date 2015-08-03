@@ -17,14 +17,22 @@
 
 						<!-- Text -->
 							<section>
-								<?php while ($row = mysql_fetch_assoc($data_db)) { ?>
+								<?php 
+									$num_records = mysql_num_rows($data_db);
+									if ($num_records < 1) { ?>
+								<header>
+									<h3>Нет новостей</h3>
+								</header>
+								<p>В данный момент на сайте новостей нет.</p>
+									<?php } else {
+									while ($row = mysql_fetch_assoc($data_db)) { ?>
 								<header>
 									<h3><a href=mynews-news<?php echo $row['id_post']; ?>.html><?php echo $row['title_post']; ?></a></h3>
 									<p>опубликовано <?php echo $row['date_post']; ?></p>
 								</header>
 								<p><?php if (isset($id_news)) { echo $row['text_post']; } else { echo $row['desc_post']; } ?></p>
 								<hr />
-								<?php } ?>
+								<?php } } ?>
 								<p><?php
 								if ($page_news > 1) 
 								{
