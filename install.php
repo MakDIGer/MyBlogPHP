@@ -17,6 +17,7 @@ switch ($page) {
 	case '1' : require_once 'install/1.php'; break;
 	case '2' : require_once 'install/2.php'; break;
 	case '3' : require_once 'install/3.php'; break;
+	case '4' : require_once 'install/4.php'; break;
 	default: require_once 'install/1.php'; break;
 }
 
