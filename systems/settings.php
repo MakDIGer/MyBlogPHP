@@ -17,5 +17,5 @@ define('SERVER_DOMAIN', $vars['site_domain']);
 define('TEMPLATE', $vars['site_template']);
 define('PAGE_POSTS', $vars['page_posts']);
 
-plus_visits();
+if (!isset($_SESSION['user_key'])) plus_visits();
 ?>

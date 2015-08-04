@@ -15,7 +15,10 @@
 						</header>
 						<p>
 							Основной домен: <a href="<?php echo $settings['site_domain']; ?>"><?php echo $settings['site_domain']; ?></a><br />
-							Заголовок портала: <?php echo $settings['site_name']; ?><br /><br />
+							Заголовок портала: <?php echo $settings['site_name']; ?><br />
+							Шаблон портала: <?php echo $settings['site_template']; ?><br />
+							Просмотры: <?php echo $settings['site_visits']; ?><br />
+							Уникальных посетителей: <?php echo $settings['site_uniq_visits']; ?><br /><br />
 							
 							Имя сайта в Email: <?php echo $settings['site_email_name']; ?><br />
 							Email портала: <?php echo $settings['site_email']; ?><br /><br />
