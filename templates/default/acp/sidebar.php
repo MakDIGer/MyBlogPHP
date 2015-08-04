@@ -19,6 +19,10 @@
 													<li><a href="acp_settings.html">Настройки портала</a></li>
 													<li><a href="acp_login.html">Выход</a></li>
 												</ul>
+												<ul class="alt">	
+													<li><a href="acp_addnews.html">Добавить новость</a></li>
+													<li><a href="acp_addprojects.html">Добавить проект</a></li>
+												</ul>
 											</p>
 										</section>
 									</section>
