@@ -19,28 +19,28 @@
 								<form name="add_project" method="post" action="acp_addprojects.html">
 									<div class="row uniform 50%">
 										<div class="6u 12u$(xsmall)">
-											<input type="text" name="title_project" id="title_post" value="" placeholder="Заголовок проекта" />
+											<input type="text" name="title_project" id="title_post" maxlength="128" value="" placeholder="Заголовок проекта" />
 										</div>
 										<div class="6u 12u$(xsmall)">
-											<input type="text" name="lang_project" id="lang_project" value="" placeholder="Язык программирования" />
+											<input type="text" name="lang_project" id="lang_project" maxlength="32" value="" placeholder="Язык программирования" />
 										</div>
 										<div class="6u 12u$(xsmall)">
-											<input type="text" name="version_project" id="version_project" value="" placeholder="Версия" />
+											<input type="text" name="version_project" id="version_project" maxlength="32" value="" placeholder="Версия" />
 										</div>
 										<div class="6u 12u$(xsmall)">
-											<input type="text" name="support_project" id="support_project" value="" placeholder="Поддержка" />
+											<input type="text" name="support_project" id="support_project" maxlength="3" value="" placeholder="Поддержка" />
 										</div>
 										<div class="6u 12u$(xsmall)">
-											<input type="text" name="date_rls_project" id="date_rls_project" value="" placeholder="Дата выпуска DD месяц YYYY" />
+											<input type="text" name="date_rls_project" id="date_rls_project" maxlength="16" value="" placeholder="Дата выпуска DD месяц YYYY" />
 										</div>
 										<div class="6u 12u$(xsmall)">
-											<input type="text" name="date_lst_upd_project" id="date_lst_upd_project" value="" placeholder="Дата последнего обновления DD месяц YYYY" />
+											<input type="text" name="date_lst_upd_project" id="date_lst_upd_project" maxlength="16" value="" placeholder="Дата последнего обновления DD месяц YYYY" />
 										</div>
 										<div class="12u$">
-											<textarea name="desc_project" id="desc_project" placeholder="Краткое описание проекта" rows="6"></textarea>
+											<textarea name="desc_project" id="desc_project" maxlength="255" placeholder="Краткое описание проекта" rows="6"></textarea>
 										</div>
 										<div class="12u$">
-											<textarea name="description_project" id="description_project" placeholder="Подробное описание проекта" rows="6"></textarea>
+											<textarea name="description_project" id="description_project" maxlength="1200" placeholder="Подробное описание проекта" rows="6"></textarea>
 										</div>
 										<div class="12u$">
 											<ul class="actions">
