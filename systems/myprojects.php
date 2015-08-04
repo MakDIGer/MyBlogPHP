@@ -22,6 +22,7 @@ if (isset($_GET['project']))
 	$num_DB = ask_database('SELECT * FROM my_projects');
 	$num_records = mysql_num_rows($num_DB); //колличество записей
 
+	if ($num_records < 1) {  } else {
 	$pages_projects = $num_records/PAGE_POSTS;
 	$pages_projects = ceil($pages_projects); //колличество страниц
 
@@ -33,5 +34,6 @@ if (isset($_GET['project']))
 		$start_projects = ($page_projects-1)*PAGE_POSTS;
 	}
 	$data_db = ask_database('SELECT * FROM my_projects ORDER by id_project DESC LIMIT '.PAGE_POSTS.' OFFSET '.$start_projects);
+	}
 }
  ?>

@@ -23,7 +23,7 @@
 								<header>
 									<h3>Нет новостей</h3>
 								</header>
-								<p>В данный момент на сайте новостей нет.</p>
+								<p><?php echo $error_message; ?></p>
 									<?php } else {
 									while ($row = mysql_fetch_assoc($data_db)) { ?>
 								<header>

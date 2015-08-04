@@ -56,7 +56,8 @@
 				<?php } else { ?>
 						<!-- Text -->
 							<section>
-								<?php while ($row = mysql_fetch_assoc($data_db)) { ?>
+								<?php
+								while ($row = mysql_fetch_assoc($data_db)) { ?>
 								<header>
 									<h3><?php echo $row['title_project']; ?></h3>
 									<p>Язык программирования: <?php echo $row['lang_project']; ?> | Версия проекта: <?php echo $row['version_project']; ?> | Последнее обновление: <?php echo $row['date_lst_upd_project']; ?></p>

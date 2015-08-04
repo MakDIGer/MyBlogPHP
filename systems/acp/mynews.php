@@ -22,6 +22,7 @@ if (isset($_GET['news']))
 	$num_DB = ask_database('SELECT * FROM my_news');
 	$num_records = mysql_num_rows($num_DB); //колличество записей
 
+	if ($num_records < 1) { $error_message = "В базе новостей нет"; } else {
 	$pages_news = $num_records/PAGE_POSTS;
 	$pages_news = ceil($pages_news); //колличество страниц
 
@@ -33,6 +34,7 @@ if (isset($_GET['news']))
 		$start_news = ($page_news-1)*PAGE_POSTS;
 	}
 	$data_db = ask_database('SELECT * FROM my_news ORDER by id_post DESC LIMIT '.PAGE_POSTS.' OFFSET '.$start_news);
+	}
 }
 
 ?>
