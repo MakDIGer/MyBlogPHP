@@ -40,7 +40,7 @@
 											Email портала: <input type="text" name="site_email" id="site_email" maxlength="64" value="<?php echo $settings['site_email'] ?>" />
 										</div>
 										<div class="6u 12u$(xsmall)">
-											Пароль к Email'у портала: <input type="text" name="site_email_pass" id="site_email_pass" maxlength="64" value="<?php echo $settings['site_email_pass'] ?>" />
+											Пароль к Email'у портала: <input type="password" name="site_email_pass" id="site_email_pass" maxlength="64" value="<?php echo $settings['site_email_pass'] ?>" />
 										</div>
 										<div class="6u 12u$(xsmall)">
 											Имя портала в Email: <input type="text" name="site_email_name" id="site_email_name" maxlength="32" value="<?php echo $settings['site_email_name'] ?>" />
