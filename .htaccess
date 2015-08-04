@@ -21,3 +21,5 @@ RewriteRule acp_myprojects-([0-9]+)\.html$ acp_index.php?acp_page=myprojects&pag
 
 RewriteRule myprojects-([0-9]+)\.html$ index.php?page=myprojects&page_projects=$1 [L]
 RewriteRule myprojects-projects([0-9]+)\.html$ index.php?page=myprojects&project=$1 [L]
+
+ErrorDocument 404 /index.php?page=404
