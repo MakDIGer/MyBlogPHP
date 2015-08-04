@@ -19,31 +19,31 @@
 								<form name="set_settings" method="post" action="acp_settings.html">
 									<div class="row uniform 50%">
 										<div class="6u 12u$(xsmall)">
-											Заголовок сайта: <input type="text" name="site_name" id="site_name" value="<?php echo $settings['site_name'] ?>" />
+											Заголовок сайта: <input type="text" name="site_name" id="site_name" maxlength="128" value="<?php echo $settings['site_name'] ?>" />
 										</div>
 										<div class="6u 12u$(xsmall)">
-											Основной домен: <input type="text" name="site_domain" id="site_domain" value="<?php echo $settings['site_domain'] ?>" />
+											Основной домен: <input type="text" name="site_domain" id="site_domain" maxlength="64" value="<?php echo $settings['site_domain'] ?>" />
 										</div>
 										<div class="6u 12u$(xsmall)">
-											Текущий шаблон: <input type="text" name="site_template" id="site_template" value="<?php echo $settings['site_template'] ?>" />
+											Текущий шаблон: <input type="text" name="site_template" id="site_template" maxlength="32" value="<?php echo $settings['site_template'] ?>" />
 										</div>
 										<div class="6u 12u$(xsmall)">
-											Колличество просмотров: <input type="text" name="site_visits" id="site_visits" value="<?php echo $settings['site_visits'] ?>" />
+											Колличество просмотров: <input type="text" name="site_visits" id="site_visits" maxlength="16" value="<?php echo $settings['site_visits'] ?>" />
 										</div>
 										<div class="6u 12u$(xsmall)">
-											Колличество уникальных посетителей: <input type="text" name="site_uniq_visits" id="site_uniq_visits" value="<?php echo $settings['site_uniq_visits'] ?>" />
+											Колличество уникальных посетителей: <input type="text" name="site_uniq_visits" id="site_uniq_visits" maxlength="8" value="<?php echo $settings['site_uniq_visits'] ?>" />
 										</div>
 										<div class="6u 12u$(xsmall)">
-											Колличество постов на страницу: <input type="text" name="page_posts" id="page_posts" value="<?php echo $settings['page_posts'] ?>" />
+											Колличество постов на страницу: <input type="text" name="page_posts" id="page_posts" maxlength="2" value="<?php echo $settings['page_posts'] ?>" />
 										</div>
 										<div class="6u 12u$(xsmall)">
-											Email портала: <input type="text" name="site_email" id="site_email" value="<?php echo $settings['site_email'] ?>" />
+											Email портала: <input type="text" name="site_email" id="site_email" maxlength="64" value="<?php echo $settings['site_email'] ?>" />
 										</div>
 										<div class="6u 12u$(xsmall)">
-											Пароль к Email'у портала: <input type="text" name="site_email_pass" id="site_email_pass" value="<?php echo $settings['site_email_pass'] ?>" />
+											Пароль к Email'у портала: <input type="text" name="site_email_pass" id="site_email_pass" maxlength="64" value="<?php echo $settings['site_email_pass'] ?>" />
 										</div>
 										<div class="6u 12u$(xsmall)">
-											Имя портала в Email: <input type="text" name="site_email_name" id="site_email_name" value="<?php echo $settings['site_email_name'] ?>" />
+											Имя портала в Email: <input type="text" name="site_email_name" id="site_email_name" maxlength="32" value="<?php echo $settings['site_email_name'] ?>" />
 										</div>
 										<div class="12u$">
 											<ul class="actions">

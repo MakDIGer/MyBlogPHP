@@ -22,6 +22,7 @@ switch ($acp_page) {
 	case 'addprojects' : require_once 'templates/'.TEMPLATE.'/acp/head.php'; require_once 'templates/'.TEMPLATE.'/acp/sidebar.php'; include_once 'systems/acp/addprojects.php'; require_once 'templates/'.TEMPLATE.'/acp/addprojects.php'; break;
 	case 'editprojects' : require_once 'templates/'.TEMPLATE.'/acp/head.php'; require_once 'templates/'.TEMPLATE.'/acp/sidebar.php'; include_once 'systems/acp/editprojects.php'; require_once 'templates/'.TEMPLATE.'/acp/editprojects.php'; break;
 	case 'settings' : require_once 'templates/'.TEMPLATE.'/acp/head.php'; require_once 'templates/'.TEMPLATE.'/acp/sidebar.php'; include_once 'systems/acp/settings.php'; require_once 'templates/'.TEMPLATE.'/acp/settings.php'; break;
+	case 'admins' : require_once 'templates/'.TEMPLATE.'/acp/head.php'; require_once 'templates/'.TEMPLATE.'/acp/sidebar.php'; include_once 'systems/acp/admins.php'; require_once 'templates/'.TEMPLATE.'/acp/admins.php'; break;
 	default: require_once 'templates/'.TEMPLATE.'/404.php';
 }
 
