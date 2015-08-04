@@ -20,13 +20,13 @@
 								<form name="add_news" method="post" action="acp_addnews.html">
 									<div class="row uniform 50%">
 										<div class="6u 12u$(xsmall)">
-											<input type="text" name="title_post" id="title_post" value="" placeholder="Заголовок" />
+											<input type="text" name="title_post" id="title_post" value="" maxlength="255" placeholder="Заголовок" />
 										</div>
 										<div class="12u$">
-											<textarea name="desc_post" id="desc_post" placeholder="Краткое описание новости" rows="6"></textarea>
+											<textarea name="desc_post" id="desc_post" maxlength="255" placeholder="Краткое описание новости" rows="6"></textarea>
 										</div>
 										<div class="12u$">
-											<textarea name="text_post" id="text_post" placeholder="Подробное описание новости" rows="6"></textarea>
+											<textarea name="text_post" id="text_post" maxlength="1200" placeholder="Подробное описание новости" rows="6"></textarea>
 										</div>
 										<div class="12u$">
 											<ul class="actions">

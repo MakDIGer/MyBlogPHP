@@ -55,13 +55,13 @@
 								<form name="edit_news" method="post" action="acp_editnews.html">
 									<div class="row uniform 50%">
 										<div class="6u 12u$(xsmall)">
-											<input type="text" name="id_post" id="id_post" value="<?php echo $row['id_post']; ?>" />
+											<input type="text" name="id_post" id="id_post" maxlength="10" value="<?php echo $row['id_post']; ?>" />
 										</div>
 										<div class="6u 12u$(xsmall)">
-											<input type="text" name="title_post" id="title_post" value="<?php echo $row['title_post']; ?>" />
+											<input type="text" name="title_post" id="title_post" maxlength="255" value="<?php echo $row['title_post']; ?>" />
 										</div>
 										<div class="12u$">
-											<textarea name="desc_post" id="desc_post" rows="6"><?php echo $row['desc_post']; ?></textarea>
+											<textarea name="desc_post" id="desc_post" maxlength="255" rows="6"><?php echo $row['desc_post']; ?></textarea>
 										</div>
 										<div class="12u$">
 											<textarea name="text_post" id="text_post" rows="6"><?php echo $row['text_post']; ?></textarea>

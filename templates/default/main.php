@@ -119,10 +119,10 @@
 								<form name="contact_form" method="post" action="email.html" onsubmit="return validate_form ( );">
 									<div class="row uniform 50%">
 										<div class="6u 12u$(xsmall)">
-											<input type="text" name="name" id="name" value="" placeholder="Имя" />
+											<input type="text" name="name" id="name" value="" maxlength="40" placeholder="Имя" />
 										</div>
 										<div class="6u$ 12u$(xsmall)">
-											<input type="email" name="email" id="email" value="" placeholder="Email" />
+											<input type="email" name="email" id="email" value="" maxlength="40" placeholder="Email" />
 										</div>
 										<div class="6u 12u$(medium)">
 											<input type="checkbox" id="copy" name="copy">
@@ -133,7 +133,7 @@
 											<label for="human">Я человек, а не робот.</label>
 										</div>
 										<div class="12u$">
-											<textarea name="message" id="message" placeholder="Введите ваше сообщение" rows="6"></textarea>
+											<textarea name="message" id="message" maxlength="800" placeholder="Введите ваше сообщение" rows="6"></textarea>
 										</div>
 										<div class="12u$">
 											<ul class="actions">
