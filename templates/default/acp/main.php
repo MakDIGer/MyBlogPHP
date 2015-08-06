@@ -23,7 +23,6 @@
 							Имя сайта в Email: <?php echo $settings['site_email_name']; ?><br />
 							Email портала: <?php echo $settings['site_email']; ?><br /><br />
 							
-							Текущий шаблон: <?php echo $settings['site_template']; ?><br />
 							Новостей в базе: <?php echo NUM_NEWS; ?><br />
 							Проектов в базе: <?php echo NUM_PROJECTS; ?><br /><br />
 							
