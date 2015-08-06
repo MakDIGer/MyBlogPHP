@@ -1,21 +1,21 @@
 # MyBlogPHP
 
- * Персональный блог Макарина Николая
- * Версия 1 Public Beta 1 build 1
+ * Personal blog Makarin Nikolai
+ * Version 1 Public Beta 1 build 1
 
-### о проекте
-Проект для быстрого содания сайта визитки с микробрологом и с послужным списком 
-реализованных проектов. Подходит под различные направления.
+### About the project
+The project is to quickly create a small site with microblog and track record
+completed projects. Suitable is for variety of topics.
 
-### ТРЕБОВАНИЯ
-* PHP 5.3 и выше
+### REQUIREMENTS
+* PHP 5.3 and higher
 * MySQL 5.5
 
-### УСТАНОВКА
-1.Скопировать файлы на хостинг
-2.Подготовить заранее базу данных
-3.Запустить установочный скрипт /install.php
-4.Заполнить на каждом шаге все поля для успешной установки.
-5.После успешной установки - заполнить сайт нужной информацией.
+### INSTALLATION
+1. Copy files into hosting
+2. Prepare in advance the database
+3. Run script /install.php
+4. Fill at each step all the fields to have a successful installation.
+5. After the successful installation - to fill the site with necessary information.
 
-По любым вопросам можно писать разработчику скрипта - makarin@kgdnet.ru
+Any questions? - You can write me - makarin@kgdnet.ru
