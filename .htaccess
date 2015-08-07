@@ -23,3 +23,5 @@ RewriteRule myprojects-([0-9]+)\.html$ index.php?page=myprojects&page_projects=$
 RewriteRule myprojects-projects([0-9]+)\.html$ index.php?page=myprojects&project=$1 [L]
 
 ErrorDocument 404 /index.php?page=404
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^ http://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
