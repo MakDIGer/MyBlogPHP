@@ -14,3 +14,4 @@ Disallow: /install/
 Disallow: /systems/
 Disallow: /templates/
 Disallow: /acp_
+Sitemap: http://www.makarin.kgdnet.ru/sitemap.xml
