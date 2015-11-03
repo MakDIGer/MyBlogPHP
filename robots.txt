@@ -1,0 +1,17 @@
+User-agent: Yandex
+Disallow: /assets/
+Disallow: /images/
+Disallow: /install/
+Disallow: /systems/
+Disallow: /templates/
+Disallow: /acp_
+Host: www.makarin.kgdnet.ru
+
+User-agent: *
+Disallow: /assets/
+Disallow: /images/
+Disallow: /install/
+Disallow: /systems/
+Disallow: /templates/
+Disallow: /acp_
+Sitemap: http://www.makarin.kgdnet.ru/sitemap.xml

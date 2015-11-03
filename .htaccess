@@ -1,0 +1,27 @@
+RewriteEngine on
+RewriteBase /
+
+RewriteRule acp_([a-z]+)\.html$ acp_index.php?acp_page=$1 [L]
+RewriteRule ([a-z]+)\.html$ index.php?page=$1 [L]
+
+RewriteRule acp_mynews-([0-9]+)\.html$ acp_index.php?acp_page=mynews&acp_page_news=$1 [L]
+RewriteRule acp_addnews\.html$ acp_index.php?acp_page=addnews [L]
+RewriteRule acp_editnews\.html$ acp_index.php?acp_page=editnews&news=$1 [L]
+RewriteRule acp_mynews-news([0-9]+)\.html$ acp_index.php?acp_page=mynews&news=$1 [L]
+RewriteRule acp_mynews-del([0-9]+)\.html$ acp_index.php?acp_page=rmnews&del=$1 [L]
+
+RewriteRule mynews-([0-9]+)\.html$ index.php?page=mynews&page_news=$1 [L]
+RewriteRule mynews-news([0-9]+)\.html$ index.php?page=mynews&news=$1 [L]
+
+RewriteRule acp_myprojects-projects([0-9]+)\.html$ acp_index.php?acp_page=myprojects&project=$1 [L]
+RewriteRule acp_myprojects-del([0-9]+)\.html$ acp_index.php?acp_page=rmprojects&del=$1 [L]
+RewriteRule acp_addprojects\.html$ acp_index.php?acp_page=addprojects [L]
+RewriteRule acp_editprojects\.html$ acp_index.php?acp_page=editprojects&projects=$1 [L]
+RewriteRule acp_myprojects-([0-9]+)\.html$ acp_index.php?acp_page=myprojects&page_projects=$1 [L]
+
+RewriteRule myprojects-([0-9]+)\.html$ index.php?page=myprojects&page_projects=$1 [L]
+RewriteRule myprojects-projects([0-9]+)\.html$ index.php?page=myprojects&project=$1 [L]
+
+ErrorDocument 404 /index.php?page=404
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^ http://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
