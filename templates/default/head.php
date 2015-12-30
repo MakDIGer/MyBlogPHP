@@ -19,6 +19,9 @@
 	<head>
 		<title><?php echo SITE_NAME; ?></title>
 		<base href="<?php echo SERVER_DOMAIN; ?>"> 
+		<meta name="keywords" content="<?php echo SITE_KEYWORDS; ?>" />
+		<meta name="description" content="<?php echo SITE_DESCRIPTION; ?>" />
+
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
