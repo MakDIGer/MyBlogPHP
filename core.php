@@ -7,6 +7,7 @@
  
 $page = isset($_GET['page']) ? htmlspecialchars($_GET['page']) : 'main';
 
+require_once 'systems/head.php';
 require_once 'templates/'.TEMPLATE.'/head.php';
 
 switch ($page) {
