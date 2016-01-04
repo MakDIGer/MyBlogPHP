@@ -45,6 +45,12 @@
 										<div class="6u 12u$(xsmall)">
 											Имя портала в Email: <input type="text" name="site_email_name" id="site_email_name" maxlength="32" value="<?php echo $settings['site_email_name'] ?>" />
 										</div>
+										<div class="6u 12u$(xsmall)">
+											Ключевые слова: <input type="text" name="site_keywords" id="site_keywords" maxlength="32" value="<?php echo $settings['site_keywords'] ?>" />
+										</div>
+										<div class="12u$">
+											<textarea name="site_description" id="site_description" maxlength="255" rows="6"><?php echo $settings['site_description']; ?></textarea>
+										</div>
 										<div class="12u$">
 											<ul class="actions">
 												<li><input type="submit" value="Сохранить настройки" class="special" /></li>

@@ -8,6 +8,7 @@
 $acp_page = isset($_GET['acp_page']) ? htmlspecialchars($_GET['acp_page']) : 'main';
 if (!check_auth()) $acp_page = 'login';
 
+require_once 'systems/head.php';
 require_once 'templates/'.TEMPLATE.'/head.php';
 
 switch ($acp_page) {

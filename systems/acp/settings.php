@@ -21,8 +21,10 @@ $settings = mysql_fetch_assoc($data_settings);
 				$site_email = htmlspecialchars($_POST['site_email']);
 				$site_email_pass = htmlspecialchars($_POST['site_email_pass']);
 				$site_email_name = htmlspecialchars($_POST['site_email_name']);
+				$site_keywords = htmlspecialchars($_POST['site_keywords']);
+				$site_description = htmlspecialchars($_POST['site_description']);
 				
-				ask_database("UPDATE settings SET site_name='".$site_name."', site_domain='".$site_domain."', site_template='".$site_template."', site_visits='".$site_visits."', site_uniq_visits='".$site_uniq_visits."', page_posts='".$page_posts."', site_email='".$site_email."', site_email_pass='".$site_email_pass."', site_email_name='".$site_email_name."'");
+				ask_database("UPDATE settings SET site_name='".$site_name."', site_domain='".$site_domain."', site_template='".$site_template."', site_visits='".$site_visits."', site_uniq_visits='".$site_uniq_visits."', page_posts='".$page_posts."', site_email='".$site_email."', site_email_pass='".$site_email_pass."', site_email_name='".$site_email_name."', site_keywords='".$site_keywords."', site_description='".$site_description."'");
 				$resultat = "Изменения успешно сохранены";
 			} else $resultat = "Ошибка. Не выбран шаблон";
 		} else $resultat = "Ошибка. Неверный тип данных";
