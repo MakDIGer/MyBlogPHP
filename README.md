@@ -1,7 +1,7 @@
 # MyBlogPHP
 
  * Personal blog author by Makarin Nikolai
- * Version 1 Public Beta 1 build 1
+ * Version 1 Public Beta 1 build 3
 
 ### About project
 The project is to quickly develop a small site with the microblog and track record of the completed projects.
