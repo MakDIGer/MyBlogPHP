@@ -84,6 +84,9 @@
 										<div class="6u 12u$(xsmall)">
 											<input type="text" name="date_lst_upd_project" id="date_lst_upd_project" maxlength="16" value="<?php echo $row['date_lst_upd_project']; ?>" />
 										</div>
+										<div class="6u 12u$(xsmall)">
+											<input type="text" name="keywords" id="keywords" maxlength="255" value="<?php echo $row['keywords']; ?>" />
+										</div>
 										<div class="12u$">
 											<ul class="actions">
 												<li><input type="submit" value="Отправить сообщение" class="special" /></li>
