@@ -66,6 +66,9 @@
 										<div class="12u$">
 											<textarea name="text_post" id="text_post" rows="6"><?php echo $row['text_post']; ?></textarea>
 										</div>
+										<div class="6u 12u$(xsmall)">
+											<input type="text" name="keywords" id="keywords" maxlength="255" value="<?php echo $row['keywords']; ?>" />
+										</div>
 										<div class="12u$">
 											<ul class="actions">
 												<li><input type="submit" value="Отправить сообщение" class="special" /></li>
