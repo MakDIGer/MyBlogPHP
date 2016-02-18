@@ -72,7 +72,6 @@
 										<div class="12u$">
 											<ul class="actions">
 												<li><input type="submit" value="Отправить сообщение" class="special" /></li>
-												<li><input type="reset" value="Очистить" /></li>
 											</ul>
 										</div>
 									</div>
