@@ -36,12 +36,12 @@
 								<p><?php
 								if ($page_news > 1) 
 								{
-									echo "<a href=mynews-"; echo $page_news-1; echo ".html"; echo ">Назад</a> | ";
+									echo "<a href=mynews-"; echo $page_news-1; echo ".html"; echo ' class="button special small">Назад</a> | ';
 								}
 								if (!isset($id_news)) echo $page_news; 
 								if ($page_news < $pages_news) 
 								{ 
-									echo " | <a href=mynews-"; echo $page_news+1; echo ".html"; echo ">Вперёд</a>"; 
+									echo " | <a href=mynews-"; echo $page_news+1; echo ".html"; echo ' class="button special small">Вперёд</a>'; 
 								}
 								?> </p>
 								
