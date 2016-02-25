@@ -28,6 +28,9 @@
 										<div class="12u$">
 											<textarea name="text_post" id="text_post" maxlength="1200" placeholder="Подробное описание новости" rows="6"></textarea>
 										</div>
+										<div class="6u 12u$(xsmall)">
+											<input type="text" name="keywords" id="keywords" value="" maxlength="255" placeholder="Ключевые слова" />
+										</div>
 										<div class="12u$">
 											<ul class="actions">
 												<li><input type="submit" value="Отправить сообщение" class="special" /></li>
