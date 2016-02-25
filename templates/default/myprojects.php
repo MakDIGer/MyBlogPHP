@@ -44,12 +44,12 @@
 								<p><?php
 								if ($page_projects > 1) 
 								{
-									echo "<a href=myprojects-"; echo $page_projects-1; echo ".html"; echo ">Назад</a> | ";
+									echo "<a href=myprojects-"; echo $page_projects-1; echo ".html"; echo ' class="button special small">Назад</a> | ';
 								}
 								if (!isset($id_projects)) echo $page_projects; 
 								if ($page_projects < $pages_projects) 
 								{ 
-									echo " | <a href=myprojects-"; echo $page_projects+1; echo ".html"; echo ">Вперёд</a>";
+									echo " | <a href=myprojects-"; echo $page_projects+1; echo ".html"; echo ' class="button special small">Вперёд</a>';
 								} ?>
 								</p>
 							</section>
