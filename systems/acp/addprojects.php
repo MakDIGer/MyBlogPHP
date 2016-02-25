@@ -13,9 +13,10 @@ if (isset($_POST['title_project']) and isset($_POST['desc_project']) and isset($
 	$version_project = htmlspecialchars($_POST['version_project']);
 	$support_project = htmlspecialchars($_POST['support_project']);
 	$date_rls_project = htmlspecialchars($_POST['date_rls_project']);
+	$keywords = htmlspecialchars($_POST['keywords']);
 	$date_lst_upd_project = htmlspecialchars($_POST['date_lst_upd_project']);
 	
-	ask_database("INSERT INTO my_projects (title_project, desc_project, description_project, lang_project, version_project, support_project, date_rls_project, date_lst_upd_project) VALUE ('".$title_project."','".$desc_project."','".$description_project."','".$lang_project."','".$version_project."','".$support_project."','".$date_rls_project."','".$date_lst_upd_project."')");
+	ask_database("INSERT INTO my_projects (title_project, desc_project, description_project, lang_project, version_project, support_project, date_rls_project, date_lst_upd_project, keywords) VALUE ('".$title_project."','".$desc_project."','".$description_project."','".$lang_project."','".$version_project."','".$support_project."','".$date_rls_project."','".$date_lst_upd_project."','".$keywords."')");
 	$resultat = 'Проект успешно добавлен';
 }
 ?>
