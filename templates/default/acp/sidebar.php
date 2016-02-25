@@ -23,6 +23,7 @@
 												<ul class="alt">	
 													<li><a href="acp_addnews.html">Добавить новость</a></li>
 													<li><a href="acp_addprojects.html">Добавить проект</a></li>
+													<li><a href="acp_sitemap.html">Обновить sitemap.xml</a></li>
 												</ul>
 											</p>
 										</section>
