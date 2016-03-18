@@ -2,7 +2,7 @@
 
 /*
  * Персональный блог Макарина Николая
- * Версия 1 Public Beta 2 build 2
+ * Версия 1 Public Beta 2 build 3
  * Файл: index.php
  */
 
