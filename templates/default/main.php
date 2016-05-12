@@ -56,9 +56,10 @@
 							<h2>Мои языки</h2>
 							<p>Уметь писать мало, также надо уметь читать и понимать уже написанное.</p>
 						</header>
-						<p>Программировал: qBASIC, TurboPascal, Delphi(писал диплом), Visual Basic, Visual C++, PHP4, C#<br />
-						Программирую сейчас: C++, PHP5<br />
-						Изучаю: Swift</p>
+						<p>Программировал: qBASIC, TurboPascal, Delphi(писал диплом), Visual Basic, Visual C++, PHP4, C#, C++<br />
+							Знаю основы: HTML5, CSS3, PHP5, Composer<br />
+						Программирую сейчас: PHP5<br />
+						Изучаю: Yii2, TWIG, Bootstrab, JS</p>
 						<ul class="actions">
 							<li><a href="#four" class="button">Подробнее</a></li>
 						</ul>
