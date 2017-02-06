@@ -15,7 +15,7 @@ The project is to quickly develop a small site with the microblog and track reco
 2. Prepare in advance the database
 3. Run script /install.php
 4. Fill at each step all the fields to have a successful installation.
-5. After the successful installation - change the right with the file config.php in /systems/ into 777.
+5. After the successful installation - change the right with the file config.php in /systems/ into 644.
 6. Fill the website necessary information.
 
 Any questions? - You can write me - makarin@kgdnet.ru
